@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;                         
+}
+body{
+    font-family: sans-serif;
+    background-color: #39f;
+    transition: 0.2s;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+#mode{
+    border-radius: 100%;
+    background-color: #fff;
+    color: #39f;
+    padding: 10px 15px;
+    font-size: 1.3rem;
+}
+#mode:hover{
+    cursor: pointer;
+    background-color: hsl(0, 0%, 90%);
+}
+#mode-dark{
+    border-radius: 100%;
+    background-color: #D8C4B6;
+    color: #213555;
+    padding: 10px 12px;
+    font-size: 1.3rem;
+}
+#mode-dark:hover{
+    cursor: pointer;
+    background-color: hsl(25, 30%, 68%);
+}
+.modebtn{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.2s;
+}
+#span{
+    pointer-events: none;
+    opacity: 0;
+    position: absolute;
+    transform: translateY(38px);
+    background-color: #213555;
+    color: #fff;
+    padding: 6px 8px;
+    border-radius: 5px;
+    transition: 0.2s;
+    font-weight: bold;
+}
+#span-dark{
+    pointer-events: none;
+    opacity: 0;
+    position: absolute;
+    transform: translateY(38px);
+    background-color: #F5EFE7;
+    color: #213555;
+    padding: 6px 8px;
+    border-radius: 5px;
+    transition: 0.2s;
+    font-weight: bold;
+}
+.modebtn:hover #span{
+    display: block;
+    opacity: 1;
+    transition: 0.2s;
+}
+.modebtn:hover #span-dark{
+    display: block;
+    opacity: 1;
+    transition: 0.2s;
+}
+.body-dark{
+    background-color: #213555;
+    color: #fff;
+    transition: 0.2s;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.box{
+    width: 400px;
+    height: auto;
+    border: px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fdfdfd;
+    box-shadow: 6px 6px 0px lightblue;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-dark{
+    width: 400px;
+    height: auto;
+    border: px solid #3E5879;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #3E5879;
+    box-shadow: 6px 6px 0px #3E5879;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-box, .bot-box{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    height: 50%;
+}
+.data{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.from{
+    margin-left: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-weight: 600;
+}
+.ft{
+    margin-left: 4px;
+}
+.select{
+    width: 100%;
+    height: 30px;
+    color: black;
+    border: 0px solid transparent;
+    border-radius: 10px;
+    font-weight: 600;
+    background-color: transparent;
+}
+.select-dark{
+    width: 100%;
+    height: 30px;
+    color: white;
+    border: 0px solid transparent;
+    border-radius: 10px;
+    font-weight: 600;
+    background-color: #3E5879;
+}
+select:active{
+    border: 0px solid transparent;
+}
+img{
+    height: 80px;
+
+}
+.img{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 80px;
+    /* border-radius: 100%; */
+    overflow: hidden;
+}
+.rate{
+    margin-block: 20px;
+    font-weight: 600;
+    
+}
+input{
+    border: 1px solid #39f;
+    border-radius: 8px;
+    padding: 10px;
+    font-size:  1.8rem;
+    font-weight: 600;
+    height: 100%;
+}
+#input-dark{
+    background-color: #F5EFE7;
+    border: 1px solid #D8C4B6 !important;
+    color: #213555;
+
+}
+.convert{
+    height: 73px;
+    width: 362px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    background: #39f;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.convert-dark{
+    height: 73px;
+    width: 362px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    background: #D8C4B6;
+    color: #213555;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.convert:hover{
+    transition: 0.2s;
+    background: hsl(210, 100%, 55%);
+
+}
+.convert-dark:hover{
+    transition: 0.2s;
+    background: hwb(25 71% 20%);
+
+}
+.cc{
+    color: #000;
+    transition: 0.3s;
+}
+.cc-dark{
+    color: #Fff;
+    transition: 0.3s;
+}
+hr{
+    width: 380px;
+}
+.hr{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.i{
+    position: absolute;
+    border-radius: 100%;
+    background-color: #39f;
+    color: white;
+    padding: 10px 15px;
+    font-size: 1.3rem;
+    transform: translate(150px, 0px);
+    transition: 0.2s;
+}
+.i-dark{
+    position: absolute;
+    border-radius: 100%;
+    background-color: #D8C4B6;
+    color: #213555;
+    padding: 10px 15px;
+    font-size: 1.3rem;
+    transform: translate(150px, 0px);
+    transition: 0.2s;
+}
+
+
+
+/* Add these media queries at the end of your CSS file */
+
+@media screen and (max-width: 768px) {
+    .box, .box-dark {
+      width: 90%;
+      margin: 0 10px;
+    }
+  
+    .convert, .convert-dark {
+      width: 94%;
+    }
+  
+    hr {
+        visibility: hidden;
+      width: 100%;
+    }
+  
+    input {
+      width: 100%;
+      font-size: 1.4rem;
+    }
+  
+    .i, .i-dark {
+      transform: translate(0, 0);
+      position: relative;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .header {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .data {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .from {
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .select, .select-dark {
+      text-align: center;
+    }
+  
+    input {
+      font-size: 1.2rem;
+      padding: 8px;
+    }
+  
+    .convert, .convert-dark {
+      height: 60px;
+      font-size: 1rem;
+    }
+  
+    #span, #span-dark {
+      transform: translateY(30px);
+    }
+  
+    .box, .box-dark {
+      padding: 10px;
+    }
+  
+    .top-box, .bot-box {
+      padding: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    .box, .box-dark {
+      width: 95%;
+    }
+  
+    input {
+      font-size: 1rem;
+    }
+  
+    .convert, .convert-dark {
+      height: 50px;
+    }
+  }

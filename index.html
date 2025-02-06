@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="fontawesome-free/css/all.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <div class="container">
+        <div class="header">
+        <h1 class="cc" id="cc">Currency Converter</h1>
+        <div class="modebtn">
+            <i class="fa-solid fa-moon" id="mode"></i>
+            <span class="span" id="span">dark mode</span>
+        </div>
+        </div>
+        <div class="box">
+            
+            <div class="top-box">
+                <div class="data">
+                    <div class="img">
+                        <img class="fromimg" src="" alt="">
+                    </div>
+                    <div name="from" class="from">
+                    <p class="ft">From</p>
+                    <select name="from" id="from" class="select">
+                       
+                    </select>   
+                </div>
+              </div>
+                <p class="rate">1 Usd = 280 Pkr</p>
+                <input type="number" clas="finput" id="input" value="1" placeholder="From">
+            </div>
+
+            <div class="hr">
+                <i class="fa-solid fa-arrows-up-down i"></i> 
+                <hr>
+            </div>
+
+            <div class="bot-box">
+                <div class="data">
+                    <div class="img">
+                        <img class="toimg" src="" alt="">
+                    </div>
+                    <div name="to" class="from">
+                    <p class="ft">To</p>
+                    <select name="to" id="to" class="select">
+                       
+                    </select>   
+                </div>
+              </div>
+                <p class="rate">1 Usd = 280 Pkr</p>
+                <input type="number" clas="tinput" id="input" placeholder="To" disabled>
+            </div>
+
+            <button class="convert" id="convert">Convert</button>
+
+         </div>
+    </div>
+    <script src="codes.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
+

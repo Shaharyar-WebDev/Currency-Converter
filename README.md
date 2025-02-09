@@ -31,7 +31,7 @@ A simple web application that allows users to convert amounts between different 
 
 ##Live Link:
 
-https://currencyconverter.netlify.app
+https://currconvert12.netlify.app
 
 
 ##License

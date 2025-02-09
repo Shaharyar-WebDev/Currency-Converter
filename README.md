@@ -29,7 +29,7 @@ A simple web application that allows users to convert amounts between different 
    git clone https://github.com/yourusername/currency-converter.git
 2. Open index.html in your web browser.
 
-##Live Linnk:
+##Live Link:
 
 https://currencyconverter.netlify.app
 
